@@ -1,4 +1,4 @@
-# Skaffold: From code in your laptop to cloud
+# Skaffold: From code on your laptop to cloud
 
 [Skaffold](https://github.com/GoogleContainerTools/skaffold) is an open source
 tool by Google that helps you build and run your source code as containers

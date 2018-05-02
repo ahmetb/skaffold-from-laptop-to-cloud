@@ -7,34 +7,21 @@ locally or remotely and then deploy it to the cloud.
 This repository uses [Docker's example voting app][voting] and adds Skaffold
 manifest files to it and walks you through using Skaffold.
 
-![Voting app architecture
-diagram](voting-app/architecture.png)
-
-## Before you begin
-
-- Install Skaffold: ([binary
-  releases](https://github.com/GoogleContainerTools/skaffold/releases))
-
-    ```
-    brew install skaffold
-    ```
-
-- Clone this repo: 
-
-    ```
-    git clone https://github.com/ahmetb/skaffold-from-laptop-to-cloud demo
-
-    cd demo
-    ```
 
 ## Start your journey "from zero to Skaffold"
 
+0. [Before you begin](00-before-you-begin/README.md)
 1. [Use Skaffold to build & run apps locally on
     Minikube](10-local-build-run-with-minikube/README.md)
 1. [Use Skaffold to build & run apps locally on
     Docker for Mac/Windows](20-local-build-run-with-docker-desktop/README.md)
 1. [Use Skaffold to build & run apps remotely
     on GKE (Google Kubernetes Engine)](30-remote-build-to-gke/README.md)
+
+## Voting app architecture
+
+![Voting app architecture
+diagram](voting-app/architecture.png)
 
 [voting]: https://github.com/dockersamples/example-voting-app
 

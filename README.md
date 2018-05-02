@@ -29,6 +29,11 @@ diagram](voting-app/architecture.png)
 
 ### About this tutorial
 
-Licensed under Apache License Version 2.0. Copright 2018 Google Inc.
-
 Author: [@ahmetb](https://twitter.com/ahmetb/)
+
+- This workshop is licensed under Apache License Version 2.0. Copright 2018 Google Inc.
+
+- Voting App (`./voting-app`) is licensed under Apache License Version 2.0. Copyright 2016 Docker, Inc. Visit
+its [repository][voting].
+
+

@@ -20,9 +20,8 @@ you can easily run it one GKE by just changing the image name.
 
 ### Steps
 
-1. Take a look at the modified [skaffold.yaml](./skaffold.yaml). Change
-  `gcr.io/YOUR_PROJECT/...` strings with your GCP project ID.
-
+1. Take a look at the modified [skaffold.yaml](./skaffold.yaml). Prepend
+  `gcr.io/YOUR_PROJECT/` string to `imageName:` fields.
 
 1. In the same file, change `YOUR_PROJECT` under the `profiles:` section.
 

@@ -20,7 +20,7 @@ spec:
   type: LoadBalancer
   ports:
   - name: "vote-service"
-    port: 80
+    port: 8000
     targetPort: 80
   selector:
     app: vote

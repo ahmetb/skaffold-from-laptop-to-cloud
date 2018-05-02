@@ -1,10 +1,15 @@
-# 2. Use Skaffold to build & run apps locally on Docker for Mac/Windows
+# 2. Use Skaffold to build & run apps locally on Docker for Desktop
 
 - (If you have Minikube running, stop it with `minikube stop`, otherwise it
   will be used.)
 - Download and install "Docker for Mac"
 - Go to Docker's Settings and enable "Kubernetes"
-- Wait until it is enabled, run `kubectl get nodes` to verify.
+- Wait until Kubernetes is enabled, run `kubectl get nodes` to verify.
+- Make sure your current context is docker-for-desktop:
+
+  ```sh
+  kubectl config current-context docker-for-desktop
+
 
 At this point you can just reuse the [same Skaffold manifest
 file][ff] you used for Minikube.

@@ -1,0 +1,19 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  artifacts:
+  - imageName: gcr.io/YOUR_PROJECT_ID/vote
+    workspace: voting-app/vote/
+  - imageName: gcr.io/YOUR_PROJECT_ID/worker
+    workspace: voting-app/worker/
+  - imageName: gcr.io/YOUR_PROJECT_ID/result
+    workspace: voting-app/result/
+deploy:
+  kubectl:
+    manifests:
+    - ./voting-app/k8s-specifications/*
+profiles:
+  - name: gcb
+    build:
+      googleCloudBuild:
+        projectId: YOUR_PROJECT_ID

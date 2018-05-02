@@ -1,0 +1,14 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  artifacts:
+  - imageName: vote
+    workspace: voting-app/vote/
+  - imageName: worker
+    workspace: voting-app/worker/
+  - imageName: result
+    workspace: voting-app/result/
+deploy:
+  kubectl:
+    manifests:
+    - ./voting-app/k8s-specifications/*

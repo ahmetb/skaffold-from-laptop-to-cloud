@@ -10,5 +10,5 @@ spec:
         app: worker
     spec:
       containers:
-      - image: worker
+      - image: gcr.io/YOUR_PROJECT/worker
         name: worker

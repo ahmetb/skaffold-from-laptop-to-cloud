@@ -10,5 +10,5 @@ spec:
         app: result
     spec:
       containers:
-      - image: result
+      - image: gcr.io/YOUR_PROJECT/result
         name: result

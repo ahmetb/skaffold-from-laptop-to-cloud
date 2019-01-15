@@ -11,4 +11,4 @@ build:
 deploy:
   kubectl:
     manifests:
-    - ./voting-app/k8s-specifications/*
+    - ./voting-app/k8s-specifications-local/*
